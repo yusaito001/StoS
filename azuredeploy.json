@@ -172,15 +172,6 @@
       },
       {
         "apiVersion": "[variables('api-version')]",
-        "type": "Microsoft.Network/publicIPAddresses",
-        "name": "[variables('vmPublicIPName')]",
-        "location": "[resourceGroup().location]",
-        "properties": {
-          "publicIPAllocationMethod": "Dynamic"
-        }
-      },
-      {
-        "apiVersion": "[variables('api-version')]",
         "type": "Microsoft.Network/virtualNetworkGateways",
         "name": "[parameters('gatewayName')]",
         "location": "[resourceGroup().location]",
